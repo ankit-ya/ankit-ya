@@ -12,10 +12,10 @@ Backend & AI engineer with nearly 2 years of fully remote experience building pr
 #### ⭐ Featured work
 
 **[IndianGovAI](https://github.com/ankit-ya/IndianGovAI)**: self-correcting agentic RAG assistant over Indian government scheme documents
-`LangGraph` `FastAPI` `pgvector` `BM25 + dense retrieval` `cross-encoder reranking` `pytest` `GitHub Actions`
+`LangGraph` `FastAPI` `Qdrant` `BM25 + dense retrieval` `cross-encoder reranking` `Groq / Ollama`
 - Retrieve → grade → rewrite loop (capped retries) with code-level citation verification of every cited span
-- Hand-built 50-question eval set, including unanswerable questions, to compare retrieval set-ups
-- Typed end to end (Pydantic v2, `mypy --strict`); integration tests on real Postgres in CI
+- Hand-built 50-question eval set (incl. unanswerable questions) with hand-written retrieval and LLM-as-judge metrics
+- Built over 28 official scheme PDFs; documents what didn't work (scanned PDFs, dead gov links, free-tier token caps)
 
 **[Shramii](https://shramii.com)**: workforce platform (attendance, shifts, payroll dashboards)
 `Spring Boot` `FastAPI` `React` `WebSockets` `JWT / RBAC` `AWS`
@@ -31,7 +31,7 @@ Backend & AI engineer with nearly 2 years of fully remote experience building pr
 #### 🛠️ Stack
 
 **Backend:** Python · FastAPI · Java · Spring Boot · Node.js / Express · REST · WebSockets
-**AI / LLM:** LangGraph · LangChain · RAG · pgvector · rerankers · LLM evaluation · Ollama
+**AI / LLM:** LangGraph · LangChain · RAG · Qdrant · pgvector · rerankers · LLM evaluation · Ollama
 **Data:** PostgreSQL · MySQL · MongoDB · Redis · SQLAlchemy 2.0 (async) · Alembic
 **Frontend / Mobile:** React · React Native · TypeScript · JavaScript · Tailwind CSS · Vite
 **Infra:** AWS (EC2, S3, ALB) · Docker · GitHub Actions · pytest
